@@ -3,13 +3,6 @@ A plugin for Sketch that adjusts scroll speed on a canvas.
 
 ![](demo.gif)
 
-# Download
-
-Download SketchTurbo.sketchplugin.zip from [here](https://github.com/usagimaru/SketchTurbo/releases/latest).
-
-# Usage
-
-Install plugin, restart Sketch.app 😀
 
 # Customize
 
