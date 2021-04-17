@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421090A220FF2DCF00803269 /* SketchRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 421090A120FF2DCF00803269 /* SketchRuntime.h */; };
+		421090A520FF2E5400803269 /* NSEvent+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 421090A320FF2E5400803269 /* NSEvent+Extension.m */; };
+		421090A620FF2E5400803269 /* NSEvent+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 421090A420FF2E5400803269 /* NSEvent+Extension.h */; };
+		421090AC20FF2EFE00803269 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 421090AB20FF2EFE00803269 /* Logging.h */; };
+		425A980920FF12130003193B /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 425A980820FF12130003193B /* manifest.json */; };
+		425A983520FF12CC0003193B /* TurboCore.h in Resources */ = {isa = PBXBuildFile; fileRef = 425A983420FF12CC0003193B /* TurboCore.h */; };
+		425A983720FF12CC0003193B /* TurboCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 425A983620FF12CC0003193B /* TurboCore.js */; };
+		425A983920FF12CC0003193B /* TurboCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 425A983820FF12CC0003193B /* TurboCore.m */; };
+		425A984220FF276F0003193B /* TurboCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 425A983220FF12CC0003193B /* TurboCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		425A984520FF2C5C0003193B /* TBUserDefaultsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 425A984320FF2C5C0003193B /* TBUserDefaultsController.h */; };
+		425A984620FF2C5C0003193B /* TBUserDefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425A984420FF2C5C0003193B /* TBUserDefaultsController.m */; };
+		425A984C20FF2C6F0003193B /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 425A984820FF2C6F0003193B /* JRSwizzle.h */; };
+		425A984F20FF2C6F0003193B /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 425A984B20FF2C6F0003193B /* JRSwizzle.m */; };
+		425A985220FF2C7C0003193B /* RuntimeInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 425A985020FF2C7C0003193B /* RuntimeInjector.h */; };
+		425A985320FF2C7C0003193B /* RuntimeInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 425A985120FF2C7C0003193B /* RuntimeInjector.m */; };
+		425A985720FF2CCF0003193B /* TBMSContentDrawViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 425A985420FF2CCF0003193B /* TBMSContentDrawViewProxy.h */; };
+		425A985820FF2CCF0003193B /* InjectionProxyProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 425A985520FF2CCF0003193B /* InjectionProxyProtocol.h */; };
+		425A985920FF2CCF0003193B /* TBMSContentDrawViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425A985620FF2CCF0003193B /* TBMSContentDrawViewProxy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		425A983E20FF27220003193B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 425A97FB20FF12120003193B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 425A983120FF12CC0003193B;
+			remoteInfo = TurboCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		425A980120FF12130003193B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Sketch;
+			dstSubfolderSpec = 1;
+			files = (
+				425A984220FF276F0003193B /* TurboCore.framework in CopyFiles */,
+				425A980920FF12130003193B /* manifest.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		421090A120FF2DCF00803269 /* SketchRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchRuntime.h; sourceTree = "<group>"; };
+		421090A320FF2E5400803269 /* NSEvent+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEvent+Extension.m"; sourceTree = "<group>"; };
+		421090A420FF2E5400803269 /* NSEvent+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEvent+Extension.h"; sourceTree = "<group>"; };
+		421090AB20FF2EFE00803269 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		425A980520FF12130003193B /* SketchTurbo.sketchplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchTurbo.sketchplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		425A980820FF12130003193B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		425A980C20FF12130003193B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425A983220FF12CC0003193B /* TurboCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TurboCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		425A983420FF12CC0003193B /* TurboCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurboCore.h; sourceTree = "<group>"; };
+		425A983620FF12CC0003193B /* TurboCore.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = TurboCore.js; sourceTree = "<group>"; };
+		425A983820FF12CC0003193B /* TurboCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurboCore.m; sourceTree = "<group>"; };
+		425A983A20FF12CC0003193B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425A984320FF2C5C0003193B /* TBUserDefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBUserDefaultsController.h; sourceTree = "<group>"; };
+		425A984420FF2C5C0003193B /* TBUserDefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBUserDefaultsController.m; sourceTree = "<group>"; };
+		425A984820FF2C6F0003193B /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		425A984920FF2C6F0003193B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		425A984A20FF2C6F0003193B /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		425A984B20FF2C6F0003193B /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		425A985020FF2C7C0003193B /* RuntimeInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeInjector.h; sourceTree = "<group>"; };
+		425A985120FF2C7C0003193B /* RuntimeInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeInjector.m; sourceTree = "<group>"; };
+		425A985420FF2CCF0003193B /* TBMSContentDrawViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMSContentDrawViewProxy.h; sourceTree = "<group>"; };
+		425A985520FF2CCF0003193B /* InjectionProxyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjectionProxyProtocol.h; sourceTree = "<group>"; };
+		425A985620FF2CCF0003193B /* TBMSContentDrawViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMSContentDrawViewProxy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		425A980020FF12130003193B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425A982D20FF12CC0003193B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		421090AD20FF2F3100803269 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				425A985020FF2C7C0003193B /* RuntimeInjector.h */,
+				425A985120FF2C7C0003193B /* RuntimeInjector.m */,
+				421090A420FF2E5400803269 /* NSEvent+Extension.h */,
+				421090A320FF2E5400803269 /* NSEvent+Extension.m */,
+				425A985520FF2CCF0003193B /* InjectionProxyProtocol.h */,
+				421090A120FF2DCF00803269 /* SketchRuntime.h */,
+				421090AB20FF2EFE00803269 /* Logging.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		425A97FA20FF12120003193B = {
+			isa = PBXGroup;
+			children = (
+				425A980720FF12130003193B /* SketchTurbo */,
+				425A983320FF12CC0003193B /* TurboCore */,
+				425A980620FF12130003193B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		425A980620FF12130003193B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				425A980520FF12130003193B /* SketchTurbo.sketchplugin */,
+				425A983220FF12CC0003193B /* TurboCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		425A980720FF12130003193B /* SketchTurbo */ = {
+			isa = PBXGroup;
+			children = (
+				425A980820FF12130003193B /* manifest.json */,
+				425A980C20FF12130003193B /* Info.plist */,
+			);
+			path = SketchTurbo;
+			sourceTree = "<group>";
+		};
+		425A983320FF12CC0003193B /* TurboCore */ = {
+			isa = PBXGroup;
+			children = (
+				425A983A20FF12CC0003193B /* Info.plist */,
+				425A983620FF12CC0003193B /* TurboCore.js */,
+				425A983420FF12CC0003193B /* TurboCore.h */,
+				425A983820FF12CC0003193B /* TurboCore.m */,
+				425A985420FF2CCF0003193B /* TBMSContentDrawViewProxy.h */,
+				425A985620FF2CCF0003193B /* TBMSContentDrawViewProxy.m */,
+				425A984320FF2C5C0003193B /* TBUserDefaultsController.h */,
+				425A984420FF2C5C0003193B /* TBUserDefaultsController.m */,
+				421090AD20FF2F3100803269 /* Utility */,
+				425A984720FF2C6F0003193B /* JRSwizzle */,
+			);
+			path = TurboCore;
+			sourceTree = "<group>";
+		};
+		425A984720FF2C6F0003193B /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				425A984820FF2C6F0003193B /* JRSwizzle.h */,
+				425A984B20FF2C6F0003193B /* JRSwizzle.m */,
+				425A984920FF2C6F0003193B /* LICENSE */,
+				425A984A20FF2C6F0003193B /* README.markdown */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		425A982E20FF12CC0003193B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425A984520FF2C5C0003193B /* TBUserDefaultsController.h in Headers */,
+				425A984C20FF2C6F0003193B /* JRSwizzle.h in Headers */,
+				425A985720FF2CCF0003193B /* TBMSContentDrawViewProxy.h in Headers */,
+				421090A620FF2E5400803269 /* NSEvent+Extension.h in Headers */,
+				421090A220FF2DCF00803269 /* SketchRuntime.h in Headers */,
+				425A985820FF2CCF0003193B /* InjectionProxyProtocol.h in Headers */,
+				421090AC20FF2EFE00803269 /* Logging.h in Headers */,
+				425A985220FF2C7C0003193B /* RuntimeInjector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		425A980420FF12130003193B /* SketchTurbo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 425A980F20FF12130003193B /* Build configuration list for PBXNativeTarget "SketchTurbo" */;
+			buildPhases = (
+				425A984020FF27300003193B /* Increment Build Version */,
+				425A984120FF27480003193B /* Update manifest.json */,
+				425A97FF20FF12130003193B /* Sources */,
+				425A980020FF12130003193B /* Frameworks */,
+				425A980120FF12130003193B /* CopyFiles */,
+				425A980220FF12130003193B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				425A983F20FF27220003193B /* PBXTargetDependency */,
+			);
+			name = SketchTurbo;
+			productName = SketchTurbo;
+			productReference = 425A980520FF12130003193B /* SketchTurbo.sketchplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		425A983120FF12CC0003193B /* TurboCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 425A983B20FF12CC0003193B /* Build configuration list for PBXNativeTarget "TurboCore" */;
+			buildPhases = (
+				425A982C20FF12CC0003193B /* Sources */,
+				425A982D20FF12CC0003193B /* Frameworks */,
+				425A982E20FF12CC0003193B /* Headers */,
+				425A982F20FF12CC0003193B /* Resources */,
+				425A983020FF12CC0003193B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurboCore;
+			productName = TurboCore;
+			productReference = 425A983220FF12CC0003193B /* TurboCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		425A97FB20FF12120003193B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = usagimaru;
+				TargetAttributes = {
+					425A980420FF12130003193B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					425A983120FF12CC0003193B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 425A97FE20FF12120003193B /* Build configuration list for PBXProject "SketchTurbo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 425A97FA20FF12120003193B;
+			productRefGroup = 425A980620FF12130003193B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				425A980420FF12130003193B /* SketchTurbo */,
+				425A983120FF12CC0003193B /* TurboCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		425A982F20FF12CC0003193B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425A983720FF12CC0003193B /* TurboCore.js in Resources */,
+				425A983520FF12CC0003193B /* TurboCore.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		425A980220FF12130003193B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\necho \"Installing ${WRAPPER_NAME} to ~/Library/Application\\ Support/com.bohemiancoding.sketch3/Plugins/\"\ncp -rf ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} ~/Library/Application\\ Support/com.bohemiancoding.sketch3/Plugins/\necho \"... Finished!\"\nfi";
+		};
+		425A983020FF12CC0003193B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy .js to .framework/.js\ncp ${SRCROOT}/${TARGET_NAME}/${TARGET_NAME}.js ${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}/";
+		};
+		425A984020FF27300003193B /* Increment Build Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		425A984120FF27480003193B /* Update manifest.json */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update manifest.json";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nmanifest=$SRCROOT/$TARGETNAME/manifest.json\nversion=$PLUGIN_VERSION\nbuild=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\n\n# manifest.json のビルド番号、バージョン番号を更新\n# 一時ファイルを作らずにファイルの上書き保存を実施\n(rm $manifest && while IFS='' read -r line\ndo\necho \"$line\" |\nsed -e \"s/\\(\\\"version\\\"[ \t]*:[ \t]*\\)\\\".*\\\"\\(,\\{0,1\\}\\)$/\\1\\\"$version\\\"\\2/\" \\\n-e \"s/\\(\\\"build\\\"[ \t]*:[ \t]*\\)[0-9]*\\(,\\{0,1\\}\\)$/\\1$build\\2/\"\ndone > $manifest) < $manifest";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		425A97FF20FF12130003193B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425A982C20FF12CC0003193B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425A985920FF2CCF0003193B /* TBMSContentDrawViewProxy.m in Sources */,
+				425A984620FF2C5C0003193B /* TBUserDefaultsController.m in Sources */,
+				425A984F20FF2C6F0003193B /* JRSwizzle.m in Sources */,
+				425A985320FF2C7C0003193B /* RuntimeInjector.m in Sources */,
+				425A983920FF12CC0003193B /* TurboCore.m in Sources */,
+				421090A520FF2E5400803269 /* NSEvent+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		425A983F20FF27220003193B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 425A983120FF12CC0003193B /* TurboCore */;
+			targetProxy = 425A983E20FF27220003193B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		425A980D20FF12130003193B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		425A980E20FF12130003193B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		425A981020FF12130003193B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SketchTurbo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PLUGIN_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PLUGIN_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactionmania.SketchTurbo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = sketchplugin;
+			};
+			name = Debug;
+		};
+		425A981120FF12130003193B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SketchTurbo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PLUGIN_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PLUGIN_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactionmania.SketchTurbo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = sketchplugin;
+			};
+			name = Release;
+		};
+		425A983C20FF12CC0003193B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6RZ6S2FLK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TurboCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactionmania.TurboCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		425A983D20FF12CC0003193B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6RZ6S2FLK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TurboCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactionmania.TurboCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		425A97FE20FF12120003193B /* Build configuration list for PBXProject "SketchTurbo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425A980D20FF12130003193B /* Debug */,
+				425A980E20FF12130003193B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		425A980F20FF12130003193B /* Build configuration list for PBXNativeTarget "SketchTurbo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425A981020FF12130003193B /* Debug */,
+				425A981120FF12130003193B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		425A983B20FF12CC0003193B /* Build configuration list for PBXNativeTarget "TurboCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425A983C20FF12CC0003193B /* Debug */,
+				425A983D20FF12CC0003193B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 425A97FB20FF12120003193B /* Project object */;
+}

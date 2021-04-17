@@ -1,0 +1,20 @@
+{
+	"name": "SketchTurbo",
+	"author": "usagimaru",
+	"homepage": "https://github.com/usagimaru/SketchTurbo",
+	"identifier": "usagimaru.SketchTurbo",
+	"compatibleVersion": 50,
+	"build": 48,
+	"version": "1.0.0",
+	"description": "This plugin adjusts scroll speed of a canvas.",
+	"commands": [
+		{
+			"script": "TurboCore.framework/TurboCore.js",
+			"handlers": {
+				 "actions": {
+				 	"Startup": "onStartup"
+				 }
+			}
+		}
+	]
+}
